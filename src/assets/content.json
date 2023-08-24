@@ -1,0 +1,142 @@
+{
+  "about": {
+    "content": [
+      "I'm a software engineer based in Boston, MA. With over 12 years of experience in the tech industry, I've fine-tuned my skills in various facets of software development, including UX and design.",
+      "I have both a Bachelor of Science (BS) and a Master of Science (MS) degree from <a href=\"https://www.rpi.edu/\" target=\"_blank\" rel=\"external nofollow noreferrer\">Rensselaer Polytechnic Institute</a>, which have provided me with a solid foundation to excel in my career. As a Front-End Engineer for Amazon Web Services, I focus on building an intuitive and visually captivating web console for the <a href=\"https://aws.amazon.com/datasync/\" target=\"_blank\" rel=\"external nofollow noreferrer\">DataSync</a> service.",
+      "Outside of work, I share adventures with my husband and our sweet yet rambunctious Pomeranian, <a href=\"https://instagram.com/leopold.pom\" target=\"_blank\" rel=\"external\">Leopold</a>. Travel is our shared passion, and we're always planning our next exciting trip. During quieter moments, I immerse myself in captivating podcasts or unwind with a good TV show. I also have a thriving collection of houseplants and love to explore new hobbies, from crocheting to homebrewing.",
+      "While I'm not available for freelance work, please don't hesitate to <a href=\"#contact\">get in touch</a> about any of my projects, or simply to say hello!"
+    ]
+  },
+  "skills": {
+    "blurb": "Throughout my career, I've used diverse tools and technologies and am always excited to learn more.",
+    "content": [
+      {
+        "title": "Python",
+        "iconName": "python"
+      },
+      {
+        "title": "PHP",
+        "iconName": "php"
+      },
+      {
+        "title": "Perl",
+        "iconName": "perl"
+      },
+      {
+        "title": "Ruby",
+        "iconName": "ruby"
+      },
+      {
+        "title": "Ruby on Rails",
+        "iconName": "rubyonrails"
+      },
+      {
+        "title": "JavaScript",
+        "iconName": "javascript"
+      },
+      {
+        "title": "TypeScript",
+        "iconName": "typescript"
+      },
+      {
+        "title": "Angular",
+        "iconName": "angular"
+      },
+      {
+        "title": "React",
+        "iconName": "react"
+      },
+      {
+        "title": "Redux",
+        "iconName": "redux"
+      },
+      {
+        "title": "Preact",
+        "iconName": "preact"
+      },
+      {
+        "title": "MySQL",
+        "iconName": "mysql"
+      },
+      {
+        "title": "PostgreSQL",
+        "iconName": "postgresql"
+      },
+      {
+        "title": "HTML5",
+        "iconName": "html5"
+      },
+      {
+        "title": "CSS3",
+        "iconName": "css3"
+      },
+      {
+        "title": "Sass",
+        "iconName": "sass"
+      },
+      {
+        "title": "WordPress",
+        "iconName": "wordpress"
+      },
+      {
+        "title": "Git",
+        "iconName": "git"
+      },
+      {
+        "title": "Adobe Suite",
+        "iconName": "adobe"
+      },
+      {
+        "title": "AWS",
+        "iconName": "amazonaws"
+      }
+    ]
+  },
+  "projects": {
+    "blurb": "These are some fun projects that I've worked on outside of my day job.",
+    "content": [
+      {
+        "title": "EM Slack Tableflip",
+        "repo": "em-slack-tableflip",
+        "description": "Flip some tables on Slack",
+        "link": "https://slack-tableflip.herokuapp.com/"
+      },
+      {
+        "title": "EM Slack Roll",
+        "repo": "em-slack-roll",
+        "description": "Roll some dice on Slack",
+        "link": "https://slack-roll.herokuapp.com/"
+      },
+      {
+        "title": "EM Beer Manager",
+        "repo": "em-beer-manager",
+        "description": "Manage beers with WordPress",
+        "link": "https://wordpress.org/plugins/em-beer-manager/"
+      }
+    ]
+  },
+  "socials": {
+    "content": [
+      {
+        "title": "LinkedIn",
+        "link": "https://linkedin.com/in/ErinMorelli",
+        "iconName": "linkedin"
+      },
+      {
+        "title": "Instagram",
+        "link": "https://instagram.com/erin_morelli",
+        "iconName": "instagram"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/ErinMorelli",
+        "iconName": "github-circled"
+      },
+      {
+        "title": "Email",
+        "link": "mailto:me@erin.dev",
+        "iconName": "mail-alt"
+      }
+    ]
+  }
+}
