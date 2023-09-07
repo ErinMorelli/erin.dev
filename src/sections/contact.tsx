@@ -12,8 +12,14 @@ export function Contact({ socials }: ContactProps) {
         <h2>Contact <span>Me</span></h2>
         <div class="content">
           <div class="socials">
-            {socials.content.map(s => (
-              <a href={s.link} aria-label={s.title} target="_blank" rel="external">
+            {socials.content.map((s, idx) => (
+              <a
+                key={idx}
+                href={s.link}
+                aria-label={s.title}
+                target="_blank"
+                rel="external"
+              >
                 <i class={`icon-${s.iconName}`}></i>
               </a>
             ))}

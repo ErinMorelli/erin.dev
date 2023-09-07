@@ -12,7 +12,9 @@ export function Skills({ skills }: SkillsProps) {
         <h2>My <span>Skills</span></h2>
         <p>{skills.blurb}</p>
         <div class="content">
-          {skills.content.map((s) => <Skill skill={s} />)}
+          {skills.content.map((s, idx) => (
+            <Skill key={idx} skill={s} />
+          ))}
         </div>
       </div>
     </section>
