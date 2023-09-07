@@ -1,3 +1,4 @@
+import { uid } from 'uid';
 import { SocialsType } from '../types';
 import { ContactForm } from '../components';
 
@@ -12,9 +13,9 @@ export function Contact({ socials }: ContactProps) {
         <h2>Contact <span>Me</span></h2>
         <div class="content">
           <div class="socials">
-            {socials.content.map((s, idx) => (
+            {socials.content.map((s) => (
               <a
-                key={idx}
+                key={uid()}
                 href={s.link}
                 aria-label={s.title}
                 target="_blank"

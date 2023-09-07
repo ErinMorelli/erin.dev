@@ -1,3 +1,4 @@
+import { uid } from 'uid';
 import { AboutType } from '../types';
 
 type AboutProps = {
@@ -13,8 +14,8 @@ export function About({ about }: AboutProps) {
             <img src="/img/photo.webp" width="350" height="350" alt="Erin Morelli" />
           </div>
           <div class="summary">
-            {about.content.map((p, idx) => (
-              <p key={idx} dangerouslySetInnerHTML={{ __html: p }}></p>
+            {about.content.map((p) => (
+              <p key={uid()} dangerouslySetInnerHTML={{ __html: p }}></p>
             ))}
           </div>
         </div>

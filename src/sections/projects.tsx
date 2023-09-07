@@ -1,3 +1,4 @@
+import { uid } from 'uid';
 import { Project } from '../components';
 import { ProjectsType } from '../types';
 
@@ -12,8 +13,8 @@ export function Projects({ projects }: ProjectsProps) {
         <h2>Side <span>Projects</span></h2>
         <p>{projects.blurb}</p>
         <div class="content">
-          {projects.content.map((p, idx) => (
-            <Project key={idx} project={p} />
+          {projects.content.map((p) => (
+            <Project key={uid()} project={p} />
           ))}
         </div>
       </div>
