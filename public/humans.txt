@@ -1,9 +1,10 @@
 /* TEAM */
-Erin Morelli
+Name: Erin Morelli
 Email: me@erin.dev
-Instagram: https://instagram.com/erin_morelli
-GitHub: https://github.com/ErinMorelli
 Location: Boston, MA, USA
+GitHub: https://github.com/ErinMorelli
+Instagram: https://instagram.com/erin_morelli
+LinkedIn: https://linkedin.com/in/ErinMorelli
 
 /* FONTS */
 Icon font from Fontello (https://fontello.com/)
