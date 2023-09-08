@@ -7,6 +7,7 @@ export function Footer() {
           class="license"
           href="https://creativecommons.org/licenses/by-nc/4.0/"
           title="Creative Commons Attribution-NonCommercial 4.0 International license"
+          aria-label="Creative Commons Attribution-NonCommercial 4.0 International license"
         >
           <i class="icon-cc"></i>
           <i class="icon-cc-by"></i>
