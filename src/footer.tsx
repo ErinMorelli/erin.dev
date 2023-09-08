@@ -18,7 +18,6 @@ export function Footer() {
           href="https://preactjs.com/"
           rel="external nofollow noreferrer"
           target="_blank"
-          title="Preact"
         >Preact</a> and <a
           href="/humans.txt"
           rel="author"

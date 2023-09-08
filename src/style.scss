@@ -107,22 +107,27 @@ header {
   }
 
   .logo {
-    color: $primary-red;
-    font-size: $font-size + 14px;
-    letter-spacing: $letter-spacing;
-    position: relative;
+    padding: 0;
+    margin: 0;
 
-    span {
-      color: $primary-darkgrey;
+    a {
+      color: $primary-red;
+      font-size: $font-size + 14px;
+      letter-spacing: $letter-spacing;
       position: relative;
-      left: -10px;
-    }
-
-    &:hover {
-      color: $primary-darkgrey;
 
       span {
-        color: $primary-red;
+        color: $primary-darkgrey;
+        position: relative;
+        left: -10px;
+      }
+
+      &:hover {
+        color: $primary-darkgrey;
+
+        span {
+          color: $primary-red;
+        }
       }
     }
   }

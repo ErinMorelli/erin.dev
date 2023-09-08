@@ -26,7 +26,9 @@ export function Header() {
 
   return (
     <header>
-      <a class="logo" href="#">Erin <span>Morelli</span></a>
+      <h1 class="logo">
+        <a href="#">Erin <span>Morelli</span></a>
+      </h1>
       <div>
         <div class={`toggle ${navClass}`} onClick={toggleMenu}>Menu</div>
         <nav class={navClass}>
