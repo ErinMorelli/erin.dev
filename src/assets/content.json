@@ -3,7 +3,7 @@
     "content": [
       "I'm a software engineer based in Boston, MA. With over 12 years of experience in the tech industry, I've fine-tuned my skills in various facets of software development, including UX and design.",
       "I have both a Bachelor of Science (BS) and a Master of Science (MS) degree from <a href=\"https://www.rpi.edu/\" target=\"_blank\" rel=\"external nofollow noreferrer\">Rensselaer Polytechnic Institute</a>, which have provided me with a solid foundation to excel in my career. As a Front-End Engineer for Amazon Web Services, I focus on building an intuitive and visually captivating web console for the <a href=\"https://aws.amazon.com/datasync/\" target=\"_blank\" rel=\"external nofollow noreferrer\">DataSync</a> service.",
-      "Outside of work, I share adventures with my husband and our sweet yet rambunctious Pomeranian, <a href=\"https://instagram.com/leopold.pom\" target=\"_blank\" rel=\"external\">Leopold</a>. Travel is our shared passion, and we're always planning our next exciting trip. During quieter moments, I immerse myself in captivating podcasts or unwind with a good TV show. I also have a thriving collection of houseplants and love to explore new hobbies, from crocheting to homebrewing.",
+      "Outside of work, I share adventures with my husband and our sweet yet rambunctious Pomeranian, <a href=\"https://emorel.li/leopold\" target=\"_blank\" rel=\"external\">Leopold</a>. Travel is our shared passion, and we're always planning our next exciting trip. During quieter moments, I immerse myself in captivating podcasts or unwind with a good TV show. I also have a thriving collection of houseplants and love to explore new hobbies, from crocheting to homebrewing.",
       "While I'm not available for freelance work, please don't hesitate to <a href=\"#contact\">get in touch</a> about any of my projects, or simply to say hello!"
     ]
   },
@@ -99,19 +99,19 @@
         "title": "EM Slack Tableflip",
         "repo": "em-slack-tableflip",
         "description": "Flip some tables on Slack",
-        "link": "https://slack-tableflip.herokuapp.com/"
+        "link": "https://emorel.li/slack-tableflip"
       },
       {
         "title": "EM Slack Roll",
         "repo": "em-slack-roll",
         "description": "Roll some dice on Slack",
-        "link": "https://slack-roll.herokuapp.com/"
+        "link": "https://emorel.li/slack-roll"
       },
       {
         "title": "EM Beer Manager",
         "repo": "em-beer-manager",
         "description": "Manage beers with WordPress",
-        "link": "https://wordpress.org/plugins/em-beer-manager/"
+        "link": "https://emorel.li/em-beer-manager"
       }
     ]
   },
@@ -119,22 +119,22 @@
     "content": [
       {
         "title": "LinkedIn",
-        "link": "https://linkedin.com/in/ErinMorelli",
+        "link": "https://emorel.li/linkedin",
         "iconName": "linkedin"
       },
       {
         "title": "Instagram",
-        "link": "https://instagram.com/erin_morelli",
+        "link": "https://emorel.li/instagram",
         "iconName": "instagram"
       },
       {
         "title": "GitHub",
-        "link": "https://github.com/ErinMorelli",
+        "link": "https://emorel.li/code",
         "iconName": "github-circled"
       },
       {
         "title": "Email",
-        "link": "mailto:me@erin.dev",
+        "link": "https://emorel.li/email",
         "iconName": "mail-alt"
       }
     ]
