@@ -1,3 +1,15 @@
+declare global {
+  interface Window {
+    grecaptcha?: {
+      render: (el: HTMLElement, props: Record<string, unknown>, inherit?: boolean) => string;
+      execute: (id: string) => Promise<void>;
+      reset: (id: string) => void;
+      getResponse: (id: string) => string;
+    };
+    handleCaptchaLoaded: () => void;
+  }
+}
+
 type BaseType<T> = {
   blurb?: string;
   content: Array<T>;

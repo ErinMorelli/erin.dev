@@ -1,7 +1,14 @@
-import { useState } from 'preact/compat';
 import { JSX } from 'preact';
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState
+} from 'preact/compat';
 import { send } from '@emailjs/browser';
 import { EmailJS } from '../constants';
+import Captcha from './captcha';
 
 type ContactFormValues = {
   firstName: string;
@@ -11,6 +18,8 @@ type ContactFormValues = {
 }
 
 export function ContactForm() {
+  const captcha = new Captcha();
+
   const buttonTimeout = 2000;
   const defaultButtonText = 'Send';
   const defaultFormValues: ContactFormValues = {
@@ -18,13 +27,22 @@ export function ContactForm() {
     lastName: '',
     email: '',
     message: '',
-  };
+  }
 
+  const captchaRef = useRef();
+
+  const [captchaId, setCaptchaId] = useState<string|null>(null);
   const [buttonText, setButtonText] = useState<JSX.Element|string>(defaultButtonText);
   const [isSending, setIsSending] = useState(false);
   const [formValues, setFormValues] = useState<ContactFormValues>(defaultFormValues);
 
+  const captchaReady = useMemo(
+    () => captcha.isLoaded() && captchaId !== null,
+    [captchaId]
+  );
+
   const resetForm = () => {
+    if (captchaReady) { captcha.reset(captchaId); }
     setIsSending(false);
     setTimeout(() => setButtonText(defaultButtonText), buttonTimeout);
   }
@@ -50,24 +68,46 @@ export function ContactForm() {
 
   const handleOnSubmit = (e: Partial<Event>) => {
     e.preventDefault();
+    if (!captchaReady) { return; }
 
     setIsSending(true);
     setButtonText(<>Sending <i class="icon-spin5 animate-spin" /></>);
 
-    send(EmailJS.SERVICE, EmailJS.TEMPLATE, formValues, EmailJS.USER_ID)
-      .then((res) => {
-        if (res.status !== 200) {
-          console.debug(res);
+    captcha.execute(captchaId).then((token) => {
+      const params = {
+        ...formValues,
+        'g-recaptcha-response': token
+      };
+
+      send(EmailJS.SERVICE, EmailJS.TEMPLATE, params, EmailJS.USER_ID)
+        .then((res) => {
+          if (res.status !== 200) {
+            console.debug(res);
+            errorHandler();
+          } else {
+            successHandler();
+          }
+        })
+        .catch((err) => {
+          console.debug(err);
           errorHandler();
-        } else {
-          successHandler();
-        }
-      })
-      .catch((err) => {
-        console.debug(err);
-        errorHandler();
-      });
+        });
+    });
   };
+
+  const handleCaptchaLoaded = useCallback(
+    () => {
+      if (captcha.isLoaded() && captchaId === null) {
+        const cid = captcha.render(captchaRef.current);
+        setCaptchaId(cid);
+      }
+    },
+    [captchaId]
+  );
+
+  useEffect(() => {
+    captcha.init(handleCaptchaLoaded);
+  }, []);
 
   return (
     <form id="contact-form" onSubmit={handleOnSubmit}>
@@ -124,10 +164,11 @@ export function ContactForm() {
         <button
           type="submit"
           class="button inverse"
-          disabled={isSending}
+          disabled={isSending || !captchaReady}
         >
           {buttonText}
         </button>
+        <div ref={captchaRef} class="g-recaptcha" />
       </div>
     </form>
   );

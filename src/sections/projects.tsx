@@ -3,7 +3,7 @@ import { Project } from '../components';
 import { ProjectsType } from '../types';
 
 type ProjectsProps = {
-  projects: ProjectsType
+  projects: ProjectsType;
 }
 
 export function Projects({ projects }: ProjectsProps) {

@@ -74,6 +74,11 @@ $breakpoint-l: 1260px;
   font-size: 110%;
 }
 
+.g-recaptcha {
+  display: none;
+  visibility: hidden;
+}
+
 body {
   background: $white;
   color: $black;
