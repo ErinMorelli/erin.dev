@@ -185,6 +185,23 @@ header {
       }
     }
   }
+
+  .skip-nav {
+    background: white;
+    left: -999px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 75px;
+    z-index: -999;
+
+    &:focus {
+      left: 0;
+      overflow: auto;
+      padding: 15px 20px;
+      z-index: 999;
+    }
+  }
 }
 
 main {

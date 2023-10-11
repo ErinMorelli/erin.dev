@@ -19,11 +19,13 @@ export function Footer() {
           href="https://preactjs.com/"
           rel="external nofollow noreferrer"
           target="_blank"
+          aria-label="Preact"
         >Preact</a> and <a
           href="/humans.txt"
           rel="author"
           target="_blank"
           title="humans.txt"
+          aria-label="humans.txt"
         >love</a> &hearts;.
       </small>
     </footer>

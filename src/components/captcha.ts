@@ -1,6 +1,8 @@
 import { getCaptchaUrl, SITE_KEY } from '../constants';
 
 export default class Captcha {
+  static CLASS_NAME = 'g-recaptcha-response';
+
   isLoaded = ()  =>
     typeof window !== 'undefined' && typeof window.grecaptcha !== 'undefined';
 
@@ -23,7 +25,7 @@ export default class Captcha {
     await waitTilNotNull();
 
     if (token === '') {
-      throw new Error('Unable to get reCaptcha token');
+      throw new Error('Unable to get reCAPTCHA token');
     }
     return token;
   };
@@ -33,12 +35,17 @@ export default class Captcha {
     return await this.getToken(captchaId);
   };
 
-  render = (elem: HTMLElement) =>
-    window.grecaptcha.render(elem, {
+  render = (elem: HTMLElement): string => {
+    const captchaId = window.grecaptcha.render(elem, {
       sitekey: SITE_KEY,
       size: 'invisible',
       badge: 'inline'
     }, true);
+    const ariaElem = elem.getElementsByClassName(Captcha.CLASS_NAME).item(0);
+    ariaElem.setAttribute('aria-hidden', 'true');
+    ariaElem.setAttribute('aria-label', 'reCAPTCHA');
+    return captchaId;
+  }
 
   reset = (captchaId: string) => window.grecaptcha.reset(captchaId);
 

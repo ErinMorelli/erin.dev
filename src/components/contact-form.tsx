@@ -29,7 +29,7 @@ export function ContactForm() {
     message: '',
   }
 
-  const captchaRef = useRef();
+  const captchaRef = useRef<HTMLDivElement>();
 
   const [captchaId, setCaptchaId] = useState<string|null>(null);
   const [buttonText, setButtonText] = useState<JSX.Element|string>(defaultButtonText);
@@ -76,7 +76,7 @@ export function ContactForm() {
     captcha.execute(captchaId).then((token) => {
       const params = {
         ...formValues,
-        'g-recaptcha-response': token
+        [Captcha.CLASS_NAME]: token
       };
 
       send(EmailJS.SERVICE, EmailJS.TEMPLATE, params, EmailJS.USER_ID)
@@ -122,6 +122,7 @@ export function ContactForm() {
           onInput={handleOnInput('firstName')}
           disabled={isSending}
           autocomplete="given-name"
+          aria-required={true}
           required
         />
         <label htmlFor="lastName" class="sr-only">Last Name</label>
@@ -134,6 +135,7 @@ export function ContactForm() {
           onInput={handleOnInput('lastName')}
           disabled={isSending}
           autocomplete="family-name"
+          aria-required={true}
           required
         />
         <label htmlFor="email" class="sr-only">Email</label>
@@ -146,6 +148,7 @@ export function ContactForm() {
           onInput={handleOnInput('email')}
           disabled={isSending}
           autocomplete="email"
+          aria-required={true}
           required
         />
       </div>
@@ -159,6 +162,7 @@ export function ContactForm() {
           onInput={handleOnInput('message')}
           disabled={isSending}
           autocomplete="off"
+          aria-required={true}
           required
         />
         <button
