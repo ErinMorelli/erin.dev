@@ -1,6 +1,8 @@
 # erin.dev
 Source code for erin.dev
 
+[![buddy pipeline](https://app.buddy.works/erinmorelli/erin-dev/pipelines/pipeline/470940/badge.svg?token=9f7557e2ab6a348bc89768419d2f5f8da7bc8126a48c07be7b0af5259eb42ee3 "buddy pipeline")](https://app.buddy.works/erinmorelli/erin-dev/pipelines/pipeline/470940)
+
 ### Overall
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ErinMorelli_erin.dev&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ErinMorelli_erin.dev) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ErinMorelli_erin.dev&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ErinMorelli_erin.dev) 
