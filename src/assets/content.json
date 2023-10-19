@@ -99,19 +99,19 @@
         "title": "EM Slack Tableflip",
         "repo": "em-slack-tableflip",
         "description": "Flip some tables on Slack",
-        "link": "https://emorel.li/slack-tableflip"
+        "link": "https://slack-tableflip.herokuapp.com/"
       },
       {
         "title": "EM Slack Roll",
         "repo": "em-slack-roll",
         "description": "Roll some dice on Slack",
-        "link": "https://emorel.li/slack-roll"
+        "link": "https://slack-roll.herokuapp.com/"
       },
       {
         "title": "EM Beer Manager",
         "repo": "em-beer-manager",
         "description": "Manage beers with WordPress",
-        "link": "https://emorel.li/em-beer-manager"
+        "link": "https://wordpress.org/plugins/em-beer-manager/"
       }
     ]
   },
