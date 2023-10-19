@@ -6,13 +6,13 @@ type SkillsProps = {
   skills: SkillsType;
 }
 
-export function Skills({ skills }: SkillsProps) {
+export function Skills({ skills }: Readonly<SkillsProps>) {
   return (
     <section id="skills">
       <div>
         <h2>My <span>Skills</span></h2>
         <p>{skills.blurb}</p>
-        <div class="content">
+        <div className="content">
           {skills.content.map((s) => (
             <Skill key={uid()} skill={s} />
           ))}

@@ -56,13 +56,13 @@ export function ContactForm() {
     };
 
   const errorHandler = () => {
-    setButtonText(<>Not sent! <i class="icon-attention-circled" /></>);
+    setButtonText(<>Not sent! <i className="icon-attention-circled" /></>);
     resetForm();
   };
 
   const successHandler = () => {
     setFormValues({...defaultFormValues});
-    setButtonText(<>Sent! <i class="icon-ok-circled" /></>);
+    setButtonText(<>Sent! <i className="icon-ok-circled" /></>);
     resetForm();
   };
 
@@ -71,7 +71,7 @@ export function ContactForm() {
     if (!captchaReady) { return; }
 
     setIsSending(true);
-    setButtonText(<>Sending <i class="icon-spin5 animate-spin" /></>);
+    setButtonText(<>Sending <i className="icon-spin5 animate-spin" /></>);
 
     captcha.execute(captchaId).then((token) => {
       const params = {
@@ -112,7 +112,7 @@ export function ContactForm() {
   return (
     <form id="contact-form" onSubmit={handleOnSubmit}>
       <div>
-        <label htmlFor="firstName" class="sr-only">First Name</label>
+        <label htmlFor="firstName" className="sr-only">First Name</label>
         <input
           type="text"
           name="firstName"
@@ -121,11 +121,11 @@ export function ContactForm() {
           value={formValues.firstName}
           onInput={handleOnInput('firstName')}
           disabled={isSending}
-          autocomplete="given-name"
+          autoComplete="given-name"
           aria-required={true}
           required
         />
-        <label htmlFor="lastName" class="sr-only">Last Name</label>
+        <label htmlFor="lastName" className="sr-only">Last Name</label>
         <input
           type="text"
           name="lastName"
@@ -134,11 +134,11 @@ export function ContactForm() {
           value={formValues.lastName}
           onInput={handleOnInput('lastName')}
           disabled={isSending}
-          autocomplete="family-name"
+          autoComplete="family-name"
           aria-required={true}
           required
         />
-        <label htmlFor="email" class="sr-only">Email</label>
+        <label htmlFor="email" className="sr-only">Email</label>
         <input
           type="email"
           name="email"
@@ -147,13 +147,13 @@ export function ContactForm() {
           value={formValues.email}
           onInput={handleOnInput('email')}
           disabled={isSending}
-          autocomplete="email"
+          autoComplete="email"
           aria-required={true}
           required
         />
       </div>
       <div>
-        <label htmlFor="message" class="sr-only">Message</label>
+        <label htmlFor="message" className="sr-only">Message</label>
         <textarea
           name="message"
           id="message"
@@ -161,18 +161,18 @@ export function ContactForm() {
           value={formValues.message}
           onInput={handleOnInput('message')}
           disabled={isSending}
-          autocomplete="off"
+          autoComplete="off"
           aria-required={true}
           required
         />
         <button
           type="submit"
-          class="button inverse"
+          className="button inverse"
           disabled={isSending || !captchaReady}
         >
           {buttonText}
         </button>
-        <div ref={captchaRef} class="g-recaptcha" />
+        <div ref={captchaRef} className="g-recaptcha" />
       </div>
     </form>
   );

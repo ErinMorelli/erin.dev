@@ -6,13 +6,13 @@ type ContactProps = {
   socials: SocialsType;
 }
 
-export function Contact({ socials }: ContactProps) {
+export function Contact({ socials }: Readonly<ContactProps>) {
   return (
     <section id="contact">
       <div>
         <h2>Contact <span>Me</span></h2>
-        <div class="content">
-          <div class="socials">
+        <div className="content">
+          <div className="socials">
             {socials.content.map((s) => (
               <a
                 key={uid()}
@@ -21,7 +21,7 @@ export function Contact({ socials }: ContactProps) {
                 target="_blank"
                 rel="external"
               >
-                <i class={`icon-${s.iconName}`}></i>
+                <i className={`icon-${s.iconName}`}></i>
               </a>
             ))}
           </div>

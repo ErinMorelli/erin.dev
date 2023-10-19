@@ -6,13 +6,13 @@ type ProjectsProps = {
   projects: ProjectsType;
 }
 
-export function Projects({ projects }: ProjectsProps) {
+export function Projects({ projects }: Readonly<ProjectsProps>) {
   return (
     <section id="projects">
       <div>
         <h2>Side <span>Projects</span></h2>
         <p>{projects.blurb}</p>
-        <div class="content">
+        <div className="content">
           {projects.content.map((p) => (
             <Project key={uid()} project={p} />
           ))}

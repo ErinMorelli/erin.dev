@@ -26,13 +26,13 @@ export function Header() {
 
   return (
     <header>
-      <a class="skip-nav" href="#top">Skip to content</a>
-      <h1 class="logo">
+      <a className="skip-nav" href="#top">Skip to content</a>
+      <h1 className="logo">
         <a href="#" role="button">Erin <span>Morelli</span></a>
       </h1>
       <div>
-        <div class={`toggle ${navClass}`} onClick={toggleMenu}>Menu</div>
-        <nav class={navClass} role="menu">
+        <div className={`toggle ${navClass}`} onClick={toggleMenu}>Menu</div>
+        <nav className={navClass} role="menu">
           <a href="#top" role="menuitem">Home</a>
           <a href="#about" role="menuitem">About</a>
           <a href="#skills" role="menuitem">Skills</a>

@@ -4,14 +4,14 @@ export function Footer() {
       <small>
         <a
           rel="external license"
-          class="license"
+          className="license"
           href="https://creativecommons.org/licenses/by-nc/4.0/"
           title="Creative Commons Attribution-NonCommercial 4.0 International license"
           aria-label="Creative Commons Attribution-NonCommercial 4.0 International license"
         >
-          <i class="icon-cc"></i>
-          <i class="icon-cc-by"></i>
-          <i class="icon-cc-nc"></i>
+          <i className="icon-cc"></i>
+          <i className="icon-cc-by"></i>
+          <i className="icon-cc-nc"></i>
         </a> {new Date().getFullYear()} Erin Morelli.
       </small>
       <small>

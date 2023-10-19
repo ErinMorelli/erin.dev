@@ -6,9 +6,9 @@ type SkillProps = {
   skill: SkillType;
 }
 
-export function Skill({ skill }: SkillProps) {
+export function Skill({ skill }: Readonly<SkillProps>) {
   return (
-    <span class="skill">
+    <span className="skill">
       <Hint attribute="alt">
         <img
           src={getSimpleIcon(skill.iconName)}
