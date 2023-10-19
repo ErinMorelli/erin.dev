@@ -1,7 +1,7 @@
 # erin.dev
 Source code for erin.dev
 
-[![buddy pipeline](https://app.buddy.works/erinmorelli/erin-dev/pipelines/pipeline/470940/badge.svg?token=9f7557e2ab6a348bc89768419d2f5f8da7bc8126a48c07be7b0af5259eb42ee3 "buddy pipeline")](https://app.buddy.works/erinmorelli/erin-dev/pipelines/pipeline/470940)
+[![buddy pipeline](https://app.buddy.works/erinmorelli/erin-dev/pipelines/pipeline/470940/badge.svg?token=9f7557e2ab6a348bc89768419d2f5f8da7bc8126a48c07be7b0af5259eb42ee3 "buddy pipeline")](https://app.buddy.works/erinmorelli/erin-dev/pipelines/pipeline/470940) [![CodeFactor](https://www.codefactor.io/repository/github/erinmorelli/erin.dev/badge)](https://www.codefactor.io/repository/github/erinmorelli/erin.dev)
 
 ### Overall
 
