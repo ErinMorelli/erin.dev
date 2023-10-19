@@ -50,7 +50,7 @@ export default class Captcha {
   reset = (captchaId: string) => window.grecaptcha.reset(captchaId);
 
   init = (fn: () => void) => {
-    let script = document.createElement("script");
+    const script = document.createElement("script");
     window.handleCaptchaLoaded = fn;
     script.src = getCaptchaUrl('handleCaptchaLoaded');
     script.async = true;
