@@ -31,12 +31,13 @@ export function Header() {
         <a href="#" role="button">Erin <span>Morelli</span></a>
       </h1>
       <div>
-        <div
+        <a
           role="button"
           className={`toggle ${navClass}`}
+          tabIndex={0}
           onClick={toggleMenu}>
           Menu
-        </div>
+        </a>
         <nav className={navClass} role="menu">
           <a href="#top" role="menuitem">Home</a>
           <a href="#about" role="menuitem">About</a>

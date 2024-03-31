@@ -3,8 +3,7 @@ import { getCaptchaUrl, SITE_KEY } from '../constants';
 export default class Captcha {
   static CLASS_NAME = 'g-recaptcha-response';
 
-  isLoaded = ()  =>
-    typeof window !== 'undefined' && typeof window.grecaptcha !== 'undefined';
+  isLoaded = ()  => window?.grecaptcha !== undefined;
 
   getToken = async (captchaId: string) => {
     const getToken = () => window.grecaptcha.getResponse(captchaId);
