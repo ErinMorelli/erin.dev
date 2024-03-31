@@ -1,7 +1,7 @@
 import { getCaptchaUrl, SITE_KEY } from '../constants';
 
 export default class Captcha {
-  static CLASS_NAME = 'g-recaptcha-response';
+  static readonly CLASS_NAME = 'g-recaptcha-response';
 
   isLoaded = ()  => window?.grecaptcha !== undefined;
 
