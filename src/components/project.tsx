@@ -10,7 +10,7 @@ export function Project({ project }: Readonly<ProjectProps>) {
     <div className="project">
       <div className="wrapper">
         <div className="image" style={{ backgroundImage: `url(${getGitHubLogo(project.repo)})` }}>
-          <div className="overlay" tabIndex={0} aria-label={project.title}>
+          <div className="overlay">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <p>
@@ -18,8 +18,8 @@ export function Project({ project }: Readonly<ProjectProps>) {
                 href={project.link}
                 className="button"
                 target="_blank"
-                title={project.title}
-              >
+                aria-label={project.title}
+                title={project.title}>
                 Visit Site
               </a>
             </p>

@@ -31,7 +31,12 @@ export function Header() {
         <a href="#" role="button">Erin <span>Morelli</span></a>
       </h1>
       <div>
-        <div className={`toggle ${navClass}`} onClick={toggleMenu}>Menu</div>
+        <div
+          role="button"
+          className={`toggle ${navClass}`}
+          onClick={toggleMenu}>
+          Menu
+        </div>
         <nav className={navClass} role="menu">
           <a href="#top" role="menuitem">Home</a>
           <a href="#about" role="menuitem">About</a>
