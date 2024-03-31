@@ -35,6 +35,7 @@ export function Header() {
           role="button"
           className={`toggle ${navClass}`}
           tabIndex={0}
+          onKeyDown={toggleMenu}
           onClick={toggleMenu}>
           Menu
         </a>
