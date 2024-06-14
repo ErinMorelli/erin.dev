@@ -88,7 +88,7 @@
       },
       {
         "title": "AWS",
-        "iconName": "amazonaws"
+        "iconName": "amazonwebservices"
       }
     ]
   },
@@ -108,10 +108,10 @@
         "link": "https://slack-roll.herokuapp.com/"
       },
       {
-        "title": "EM Beer Manager",
-        "repo": "em-beer-manager",
-        "description": "Manage beers with WordPress",
-        "link": "https://wordpress.org/plugins/em-beer-manager/"
+        "title": "Canes Bingo",
+        "repo": "canes-bingo",
+        "description": "Play bingo while watching hockey",
+        "link": "https://bingo.svech.net/"
       }
     ]
   },
