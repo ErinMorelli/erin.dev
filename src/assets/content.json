@@ -128,6 +128,11 @@
         "iconName": "instagram"
       },
       {
+        "title": "Bluesky",
+        "link": "https://bsky.app/profile/erin.dev",
+        "iconName": "bluesky"
+      },
+      {
         "title": "GitHub",
         "link": "https://github.com/ErinMorelli",
         "iconName": "github-circled"

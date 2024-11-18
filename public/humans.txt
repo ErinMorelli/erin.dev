@@ -5,13 +5,14 @@ Location: Boston, MA, USA
 GitHub: https://github.com/ErinMorelli
 Instagram: https://instagram.com/erin_morelli
 LinkedIn: https://linkedin.com/in/ErinMorelli
+Bluesky: https://bsky.app/profile/erin.dev
 
 /* FONTS */
 Icon font from Fontello (https://fontello.com/)
 Voltaire and Albert Sans from Google Fonts (https://fonts.google.com)
 
 /* GRAPHICS */
-Brand logos from Simple Icons (https://simpleicons.com)
+Brand logos from Simple Icons (https://simpleicons.org)
 Stylized profile photo created with AI Mirror (https://aimirror.fun)
 Laptop on desk SVG from Adobe Stock (https://stock.adobe.com)
 
