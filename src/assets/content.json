@@ -96,6 +96,12 @@
     "blurb": "These are some fun projects that I've worked on outside of my day job.",
     "content": [
       {
+        "title": "Carolina Hurricanes Bingo",
+        "repo": "canes-bingo",
+        "description": "Play bingo while you watch hockey",
+        "link": "https://bingo.svech.net"
+      },
+      {
         "title": "EM Slack Tableflip",
         "repo": "em-slack-tableflip",
         "description": "Flip some tables on Slack",
@@ -106,12 +112,6 @@
         "repo": "em-slack-roll",
         "description": "Roll some dice on Slack",
         "link": "https://slack-roll.herokuapp.com/"
-      },
-      {
-        "title": "EM Beer Manager",
-        "repo": "em-beer-manager",
-        "description": "Manage beers with WordPress",
-        "link": "https://wordpress.org/plugins/em-beer-manager/"
       }
     ]
   },

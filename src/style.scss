@@ -21,6 +21,7 @@ $letter-spacing: 2px;
 $icon-size: 60px;
 $icon-gap: 20px;
 $font-size: 20px;
+$project-cols: 3;
 
 // Breakpoints
 $breakpoint-xs: 700px;
@@ -407,8 +408,8 @@ main {
     border: 1px solid $primary-red;
     border-radius: 10px;
     position: relative;
-    flex: 0 0 calc(100% / 3);
-    max-width: calc(calc(100% / 3) - 30px);
+    flex: 0 0 calc(100% / $project-cols);
+    max-width: calc(calc(100% / $project-cols) - 30px);
     overflow: hidden;
 
     @media only screen and (max-width: $breakpoint-l) {

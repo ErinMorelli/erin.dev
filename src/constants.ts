@@ -11,7 +11,7 @@ export const CAPTCHA_URL = 'https://www.google.com/recaptcha/api.js?render=expli
 
 export const GITHUB_USERNAME = 'ErinMorelli';
 export const GITHUB_LOGO_ROOT= `https://raw.githubusercontent.com/${GITHUB_USERNAME}`;
-export const GITHUB_LOGO_PATH= 'mainline/logo.png';
+export const GITHUB_LOGO_PATH= 'refs/heads/mainline/logo.png';
 
 export const SIMPLE_ICON_ROOT= 'https://cdn.simpleicons.org';
 
