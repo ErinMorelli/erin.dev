@@ -1,4 +1,4 @@
-import { ReactComponent as BannerImg } from '../assets/banner.svg';
+import BannerImg from '../assets/banner.svg?react';
 
 export function Banner() {
   return (
