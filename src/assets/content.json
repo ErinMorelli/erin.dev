@@ -31,10 +31,6 @@
         "iconName": "rubyonrails"
       },
       {
-        "title": "JavaScript",
-        "iconName": "javascript"
-      },
-      {
         "title": "TypeScript",
         "iconName": "typescript"
       },
@@ -47,36 +43,12 @@
         "iconName": "react"
       },
       {
-        "title": "Preact",
-        "iconName": "preact"
-      },
-      {
-        "title": "NgRx",
-        "iconName": "ngrx",
-      },
-      {
-        "title": "Redux",
-        "iconName": "redux"
-      },
-      {
-        "title": "SQLAlchemy",
-        "iconName": "sqlalchemy"
-      },
-      {
         "title": "MySQL",
         "iconName": "mysql"
       },
       {
         "title": "PostgreSQL",
         "iconName": "postgresql"
-      },
-      {
-        "title": "HTML5",
-        "iconName": "html5"
-      },
-      {
-        "title": "CSS",
-        "iconName": "css"
       },
       {
         "title": "Sass",
@@ -95,16 +67,16 @@
         "iconName": "django"
       },
       {
+        "title": "SQLAlchemy",
+        "iconName": "sqlalchemy"
+      },
+      {
         "title": "Git",
         "iconName": "git"
       },
       {
         "title": "Docker",
         "iconName": "docker"
-      },
-      {
-        "title": "Firebase",
-        "iconName": "firebase"
       },
       {
         "title": "Storybook",
@@ -117,10 +89,6 @@
       {
         "title": "Jira",
         "iconName": "jira"
-      },
-      {
-        "title": "JetBrains",
-        "iconName": "jetbrains"
       }
     ]
   },
