@@ -11,6 +11,10 @@
     "blurb": "Throughout my career, I've used diverse tools and technologies and am always excited to learn more.",
     "content": [
       {
+        "title": "Certified Scrum Master",
+        "iconName": "scrumalliance"
+      },
+      {
         "title": "Python",
         "iconName": "python"
       },
@@ -21,10 +25,6 @@
       {
         "title": "Perl",
         "iconName": "perl"
-      },
-      {
-        "title": "Ruby",
-        "iconName": "ruby"
       },
       {
         "title": "Ruby on Rails",
@@ -47,12 +47,20 @@
         "iconName": "react"
       },
       {
+        "title": "Preact",
+        "iconName": "preact"
+      },
+      {
+        "title": "NgRx",
+        "iconName": "ngrx",
+      },
+      {
         "title": "Redux",
         "iconName": "redux"
       },
       {
-        "title": "Preact",
-        "iconName": "preact"
+        "title": "SQLAlchemy",
+        "iconName": "sqlalchemy"
       },
       {
         "title": "MySQL",
@@ -67,28 +75,52 @@
         "iconName": "html5"
       },
       {
-        "title": "CSS3",
-        "iconName": "css3"
+        "title": "CSS",
+        "iconName": "css"
       },
       {
         "title": "Sass",
         "iconName": "sass"
       },
       {
+        "title": "Less",
+        "iconName": "less"
+      },
+      {
         "title": "WordPress",
         "iconName": "wordpress"
+      },
+      {
+        "title": "Django",
+        "iconName": "django"
       },
       {
         "title": "Git",
         "iconName": "git"
       },
       {
-        "title": "Adobe Suite",
-        "iconName": "adobe"
+        "title": "Docker",
+        "iconName": "docker"
       },
       {
-        "title": "AWS",
-        "iconName": "amazonwebservices"
+        "title": "Firebase",
+        "iconName": "firebase"
+      },
+      {
+        "title": "Storybook",
+        "iconName": "storybook"
+      },
+      {
+        "title": "Figma",
+        "iconName": "figma"
+      },
+      {
+        "title": "Jira",
+        "iconName": "jira"
+      },
+      {
+        "title": "JetBrains",
+        "iconName": "jetbrains"
       }
     ]
   },
