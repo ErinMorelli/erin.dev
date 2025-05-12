@@ -11,6 +11,10 @@
     "blurb": "Throughout my career, I've used diverse tools and technologies and am always excited to learn more.",
     "content": [
       {
+        "title": "Certified Scrum Master",
+        "iconName": "scrumalliance"
+      },
+      {
         "title": "Python",
         "iconName": "python"
       },
@@ -23,16 +27,8 @@
         "iconName": "perl"
       },
       {
-        "title": "Ruby",
-        "iconName": "ruby"
-      },
-      {
         "title": "Ruby on Rails",
         "iconName": "rubyonrails"
-      },
-      {
-        "title": "JavaScript",
-        "iconName": "javascript"
       },
       {
         "title": "TypeScript",
@@ -47,14 +43,6 @@
         "iconName": "react"
       },
       {
-        "title": "Redux",
-        "iconName": "redux"
-      },
-      {
-        "title": "Preact",
-        "iconName": "preact"
-      },
-      {
         "title": "MySQL",
         "iconName": "mysql"
       },
@@ -63,32 +51,44 @@
         "iconName": "postgresql"
       },
       {
-        "title": "HTML5",
-        "iconName": "html5"
-      },
-      {
-        "title": "CSS3",
-        "iconName": "css3"
-      },
-      {
         "title": "Sass",
         "iconName": "sass"
+      },
+      {
+        "title": "Less",
+        "iconName": "less"
       },
       {
         "title": "WordPress",
         "iconName": "wordpress"
       },
       {
+        "title": "Django",
+        "iconName": "django"
+      },
+      {
+        "title": "SQLAlchemy",
+        "iconName": "sqlalchemy"
+      },
+      {
         "title": "Git",
         "iconName": "git"
       },
       {
-        "title": "Adobe Suite",
-        "iconName": "adobe"
+        "title": "Docker",
+        "iconName": "docker"
       },
       {
-        "title": "AWS",
-        "iconName": "amazonwebservices"
+        "title": "Storybook",
+        "iconName": "storybook"
+      },
+      {
+        "title": "Figma",
+        "iconName": "figma"
+      },
+      {
+        "title": "Jira",
+        "iconName": "jira"
       }
     ]
   },
