@@ -30,7 +30,7 @@ export function Header() {
     }
   }, []);
 
-  const scrollToSection = (sectionName: SectionName) => {
+  const scrollToSection = (sectionName: SectionName) => () => {
     const section = [...sections.current.values()].find(s => s.id === sectionName);
     const headerOffset = header.current.clientHeight;
 
@@ -40,11 +40,15 @@ export function Header() {
     });
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <header ref={header}>
-      <a className="skip-nav" href="#top">Skip to content</a>
+      <a className="skip-nav" onClick={scrollToTop}>Skip to content</a>
       <h1 className="logo">
-        <a href="#" role="button">Erin <span>Morelli</span></a>
+        <a role="button" onClick={scrollToTop}>Erin <span>Morelli</span></a>
       </h1>
       <div>
         <a
@@ -58,19 +62,19 @@ export function Header() {
         <nav className={navClass} role="menu">
           <span
             role="menuitem"
-            onClick={() => scrollToSection(SectionName.TOP)}>Home</span>
+            onClick={scrollToSection(SectionName.TOP)}>Home</span>
           <span
             role="menuitem"
-            onClick={() => scrollToSection(SectionName.ABOUT)}>About</span>
+            onClick={scrollToSection(SectionName.ABOUT)}>About</span>
           <span
             role="menuitem"
-            onClick={() => scrollToSection(SectionName.SKILLS)}>Skills</span>
+            onClick={scrollToSection(SectionName.SKILLS)}>Skills</span>
           <span
             role="menuitem"
-            onClick={() => scrollToSection(SectionName.PROJECTS)}>Projects</span>
+            onClick={scrollToSection(SectionName.PROJECTS)}>Projects</span>
           <span
             role="menuitem"
-            onClick={() => scrollToSection(SectionName.CONTACT)}>Contact</span>
+            onClick={scrollToSection(SectionName.CONTACT)}>Contact</span>
         </nav>
       </div>
     </header>

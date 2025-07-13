@@ -121,6 +121,7 @@ header {
       font-size: $font-size + 14px;
       letter-spacing: $letter-spacing;
       position: relative;
+      cursor: pointer;
 
       span {
         color: $primary-darkgrey;
