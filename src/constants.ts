@@ -23,3 +23,11 @@ export const getGitHubLogo = (repo: string) =>
 
 export const getSimpleIcon = (iconName: string) =>
   `${SIMPLE_ICON_ROOT}/${iconName}`;
+
+export enum SectionName {
+  TOP = 'top',
+  ABOUT = 'about',
+  SKILLS = 'skills',
+  PROJECTS = 'projects',
+  CONTACT = 'contact',
+}

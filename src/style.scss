@@ -157,14 +157,24 @@ header {
     display: flex;
     justify-content: flex-end;
 
-    a {
+    span {
+      cursor: pointer;
       padding-left: $padding-x;
       font-size: $font-size + 3;
       letter-spacing: $letter-spacing;
       color: $primary-darkgrey;
+      transition: color 250ms ease;
 
       &:hover {
         color: $primary-red;
+      }
+
+      &.active {
+        color: $primary-red;
+
+        &:hover {
+          color: $primary-darkgrey;
+        }
       }
     }
 

@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'preact/compat';
+import { useEffect, useRef, useState } from 'preact/compat';
+import { SectionName } from './constants';
 
 export function Header() {
   const [navClass, setNavClass] = useState('');
+
+  const header = useRef<HTMLElement>(null);
+  const sections = useRef<NodeListOf<HTMLElement>>(null);
 
   const toggleMenu = () => {
     if (navClass === '') {
@@ -12,6 +16,8 @@ export function Header() {
   }
 
   useEffect(() => {
+    sections.current = document.querySelectorAll('section');
+
     const header = document.getElementsByTagName('header')[0];
     const sticky = header.offsetTop;
 
@@ -24,8 +30,18 @@ export function Header() {
     }
   }, []);
 
+  const scrollToSection = (sectionName: SectionName) => {
+    const section = [...sections.current.values()].find(s => s.id === sectionName);
+    const headerOffset = header.current.clientHeight;
+
+    window.scrollTo({
+      top: section.offsetTop - headerOffset,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <header>
+    <header ref={header}>
       <a className="skip-nav" href="#top">Skip to content</a>
       <h1 className="logo">
         <a href="#" role="button">Erin <span>Morelli</span></a>
@@ -40,11 +56,21 @@ export function Header() {
           Menu
         </a>
         <nav className={navClass} role="menu">
-          <a href="#top" role="menuitem">Home</a>
-          <a href="#about" role="menuitem">About</a>
-          <a href="#skills" role="menuitem">Skills</a>
-          <a href="#projects" role="menuitem">Projects</a>
-          <a href="#contact" role="menuitem">Contact</a>
+          <span
+            role="menuitem"
+            onClick={() => scrollToSection(SectionName.TOP)}>Home</span>
+          <span
+            role="menuitem"
+            onClick={() => scrollToSection(SectionName.ABOUT)}>About</span>
+          <span
+            role="menuitem"
+            onClick={() => scrollToSection(SectionName.SKILLS)}>Skills</span>
+          <span
+            role="menuitem"
+            onClick={() => scrollToSection(SectionName.PROJECTS)}>Projects</span>
+          <span
+            role="menuitem"
+            onClick={() => scrollToSection(SectionName.CONTACT)}>Contact</span>
         </nav>
       </div>
     </header>
