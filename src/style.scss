@@ -116,7 +116,7 @@ header {
     padding: 0;
     margin: 0;
 
-    a {
+    span[role="button"] {
       color: $primary-red;
       font-size: $font-size + 14px;
       letter-spacing: $letter-spacing;

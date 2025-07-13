@@ -46,34 +46,53 @@ export function Header() {
 
   return (
     <header ref={header}>
-      <a className="skip-nav" onClick={scrollToTop}>Skip to content</a>
+      <span
+        role="button"
+        tabIndex={0}
+        className="skip-nav"
+        onKeyDown={scrollToTop}
+        onClick={scrollToTop}>Skip to content</span>
       <h1 className="logo">
-        <a role="button" onClick={scrollToTop}>Erin <span>Morelli</span></a>
+        <span
+          role="button"
+          tabIndex={0}
+          onKeyDown={scrollToTop}
+          onClick={scrollToTop}>Erin <span>Morelli</span></span>
       </h1>
       <div>
-        <a
+        <span
           role="button"
           className={`toggle ${navClass}`}
           tabIndex={0}
           onKeyDown={toggleMenu}
           onClick={toggleMenu}>
           Menu
-        </a>
+        </span>
         <nav className={navClass} role="menu">
           <span
             role="menuitem"
+            tabIndex={0}
+            onKeyDown={scrollToSection(SectionName.TOP)}
             onClick={scrollToSection(SectionName.TOP)}>Home</span>
           <span
             role="menuitem"
+            tabIndex={0}
+            onKeyDown={scrollToSection(SectionName.ABOUT)}
             onClick={scrollToSection(SectionName.ABOUT)}>About</span>
           <span
             role="menuitem"
+            tabIndex={0}
+            onKeyDown={scrollToSection(SectionName.SKILLS)}
             onClick={scrollToSection(SectionName.SKILLS)}>Skills</span>
           <span
             role="menuitem"
+            tabIndex={0}
+            onKeyDown={scrollToSection(SectionName.PROJECTS)}
             onClick={scrollToSection(SectionName.PROJECTS)}>Projects</span>
           <span
             role="menuitem"
+            tabIndex={0}
+            onKeyDown={scrollToSection(SectionName.CONTACT)}
             onClick={scrollToSection(SectionName.CONTACT)}>Contact</span>
         </nav>
       </div>
