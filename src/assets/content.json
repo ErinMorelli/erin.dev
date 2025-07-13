@@ -1,14 +1,15 @@
 {
   "about": {
     "content": [
-      "I'm a software engineer and Certified ScrumMaster® based in Boston, MA. With over 12 years of experience in the tech industry, I've fine-tuned my skills in various facets of software development, including UX and design.",
-      "I have both a Bachelor of Science (BS) and a Master of Science (MS) degree from <a href=\"https://www.rpi.edu/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Rensselaer Polytechnic Institute\">Rensselaer Polytechnic Institute</a>, which have provided me with a solid foundation to excel in my career. As a Senior Software Engineer for <a href=\"https://presence.com/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Presence\">Presence</a>, I focus on developing an engaging interface for delivering telehealth therapy services to children.",
-      "Outside of work, I share adventures with my husband and our sweet yet rambunctious Pomeranian, <a href=\"https://leopoldpom.dog\" target=\"_blank\" rel=\"external\" aria-label=\"Leopold\">Leopold</a>. Travel is our shared passion, and we're always planning our next exciting trip. During quieter moments, I immerse myself in captivating podcasts or unwind with a good TV show. I also have a thriving collection of houseplants and love to explore new hobbies, from crocheting to homebrewing.",
-      "While I'm not available for freelance work, please don't hesitate to <a href=\"#contact\">get in touch</a> about any of my projects, or simply to say hello!"
+      "I'm a Senior Software Engineer and Certified ScrumMaster® based in Boston, MA, with over 12 years of experience in tech. My background spans everything from front-end development to backend systems, with a strong focus on user experience and design.",
+      "Right now, I work at <a href=\"https://presence.com/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Presence\">Presence</a>, where I help shape the interface that delivers telehealth therapy services to children.",
+      "I have both a BS and MS from <a href=\"https://www.rpi.edu/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Rensselaer Polytechnic Institute\">Rensselaer Polytechnic Institute</a>, and over the years I've built up a toolbox of skills across languages, frameworks, and platforms. Whether I'm writing code or collaborating across teams, I aim to keep things user-centered, efficient, and just a little bit creative.",
+      "Outside of work, I'm usually off adventuring with my husband and our mischievous Pomeranian, <a href=\"https://leopoldpom.dog\" target=\"_blank\" rel=\"external\" aria-label=\"Leopold\">Leopold</a>. We love to travel, and when I'm home you'll probably find me tending to my plant collection, bingeing a podcast, or diving into a new hobby (most recently: crocheting and homebrewing).",
+      "I'm not currently taking on freelance work, but feel free to reach out if you want to connect or chat about a project."
     ]
   },
   "skills": {
-    "blurb": "Throughout my career, I've used diverse tools and technologies and am always excited to learn more.",
+    "blurb": "Here's a snapshot of the tools and tech I've worked with — and I'm always up for learning something new.",
     "content": [
       {
         "title": "Certified ScrumMaster®",
@@ -93,7 +94,7 @@
     ]
   },
   "projects": {
-    "blurb": "These are some fun projects that I've worked on outside of my day job.",
+    "blurb": "Here are a few things I've built just for fun.",
     "content": [
       {
         "title": "Carolina Hurricanes Bingo",
