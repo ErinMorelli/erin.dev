@@ -5,7 +5,6 @@ Location: Boston, MA, USA
 GitHub: https://github.com/ErinMorelli
 Instagram: https://instagram.com/erin_morelli
 LinkedIn: https://linkedin.com/in/ErinMorelli
-Bluesky: https://bsky.app/profile/erin.dev
 
 /* FONTS */
 Icon font from Fontello (https://fontello.com/)
