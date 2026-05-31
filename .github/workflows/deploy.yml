@@ -3,6 +3,12 @@ name: Deploy to Production
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      sync_type:
+        description: 'Sync type (delta or full)'
+        required: false
+        default: 'full'
 
 jobs:
   deploy:
@@ -11,12 +17,14 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  #v6.0.2
+        with:
+          fetch-depth: '0'
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6.4.0
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e  #v6.4.0
         with:
-          node-version-file: '.nvmrc'
+          node-version: 24
           cache: 'npm'
 
       - name: Install Dependencies
@@ -25,18 +33,23 @@ jobs:
       - name: Build Package
         run: npm run build
 
-      - name: List Output
-        run: ls -la
-
       - name: Upload to Server
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: milanmk/actions-file-deployer@b204fec5b826c391b116c40b789df470a4fb6870  # 1.18
         with:
-          server: ${{ secrets.DEPLOY_SERVER }}
-          username: ${{ secrets.DEPLOY_USERNAME }}
-          password: ${{ secrets.DEPLOY_PASSWORD }}
-          server-dir: ${{ secrets.DEPLOY_DIR }}
-          local-dir: /
-          dry-run: true
+          remote-host: ${{ secrets.DEPLOY_SERVER }}
+          remote-user: ${{ secrets.DEPLOY_USERNAME }}
+          remote-password: ${{ secrets.DEPLOY_PASSWORD }}
+          remote-path: ${{ secrets.DEPLOY_DIR }}
+          local-path: ./dist/
+          sync: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_type || 'delta' }}
 
-#      - name: Send Pushover Notification
-#        uses: umahmood/pushover-actions@v1.1.0
+      - name: Send Pushover Notification
+        uses: umahmood/pushover-actions@5da31193f672e7418804bdb51836bdf20f393c8f  # v1.1.0
+        env:
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+        with:
+          title: Changes deployed to erin.dev
+          status: ${{ job.status }}
+          url: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+          url_title: View workflow
