@@ -3,6 +3,12 @@ name: Deploy to Production
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      sync_type:
+        description: 'Sync type (delta or full)'
+        required: false
+        default: 'full'
 
 jobs:
   deploy:
@@ -35,6 +41,7 @@ jobs:
           remote-password: ${{ secrets.DEPLOY_PASSWORD }}
           remote-path: ${{ secrets.DEPLOY_DIR }}
           local-path: ./dist/
+          sync: ${{ github.event_name == 'workflow_dispatch' && inputs.sync_type || 'delta' }}
 
       - name: Send Pushover Notification
         uses: umahmood/pushover-actions@5da31193f672e7418804bdb51836bdf20f393c8f  # v1.1.0
