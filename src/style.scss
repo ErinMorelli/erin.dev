@@ -180,19 +180,17 @@ header {
     }
 
     @media only screen and (max-width: $breakpoint-xs) {
-      & {
-        display: none;
+      display: none;
 
-        &.menu {
+      &.menu {
+        display: block;
+        position: relative;
+        padding: 10px 0 0;
+        line-height: 1.5;
+        text-align: right;
+
+        a {
           display: block;
-          position: relative;
-          padding: 10px 0 0;
-          line-height: 1.5;
-          text-align: right;
-
-          a {
-            display: block;
-          }
         }
       }
     }
