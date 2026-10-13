@@ -1,11 +1,10 @@
 {
   "about": {
     "content": [
-      "I'm a Software Engineer and Certified ScrumMaster® based in Boston, MA, with over 14 years of experience in tech. My background spans everything from front-end development to backend systems, with a strong focus on user experience and design.",
-      "Right now, I work at <a href=\"https://presence.com/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Presence\">Presence</a>, where I help shape the interface that delivers telehealth therapy services to children.",
-      "I have both a BS and MS from <a href=\"https://www.rpi.edu/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Rensselaer Polytechnic Institute\">Rensselaer Polytechnic Institute</a>, and over the years I've built up a toolbox of skills across languages, frameworks, and platforms. Whether I'm writing code or collaborating across teams, I aim to keep things user-centered, efficient, and just a little bit creative.",
-      "Outside of work, I'm usually off adventuring with my husband and our mischievous Pomeranian, <a href=\"https://leopoldpom.dog\" target=\"_blank\" rel=\"external\" aria-label=\"Leopold\">Leopold</a>. We love to travel, and when I'm home you'll probably find me tending to my plant collection, bingeing a podcast, or diving into a new hobby (most recently: crocheting and homebrewing).",
-      "I'm not currently taking on freelance work, but feel free to reach out if you want to connect or chat about a project."
+      "I'm a Senior Software Engineer based in Boston, MA, with 15+ years of experience, and a BS and MS from <a href=\"https://www.rpi.edu/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Rensselaer Polytechnic Institute\">Rensselaer Polytechnic Institute</a>. I'm happiest working on the front end, but I like understanding the whole system behind it, and I care a lot about how things look, feel, and work for the people using them.",
+      "Before <a href=\"https://presence.com/\" target=\"_blank\" rel=\"external nofollow noreferrer\" aria-label=\"Presence\">Presence</a>, I spent almost six years at Amazon, working on the Alexa Speech and AWS DataSync teams. Today I'm the tech lead for a small engineering team at Presence, where we build software for delivering telehealth therapy to kids.",
+      "Outside of work, I'm usually off adventuring with my husband and our sweet Pomeranian, <a href=\"https://leopoldpom.dog\" target=\"_blank\" rel=\"external\" aria-label=\"Leopold\">Leopold</a>. We love to travel, and when I'm home you'll probably find me tending to my plant collection, bingeing a podcast, or diving into a new hobby (most recently, crochet).",
+      "I'm not taking on freelance work right now, but feel free to reach out to connect or chat about a project."
     ]
   },
   "skills": {
@@ -22,10 +21,6 @@
       {
         "title": "PHP",
         "iconName": "php"
-      },
-      {
-        "title": "Perl",
-        "iconName": "perl"
       },
       {
         "title": "Ruby on Rails",
@@ -68,10 +63,6 @@
         "iconName": "django"
       },
       {
-        "title": "SQLAlchemy",
-        "iconName": "sqlalchemy"
-      },
-      {
         "title": "Git",
         "iconName": "git"
       },
@@ -90,6 +81,14 @@
       {
         "title": "Jira",
         "iconName": "jira"
+      },
+      {
+        "title": "Claude",
+        "iconName": "claude"
+      },
+      {
+        "title": "CodeRabbit",
+        "iconName": "coderabbit"
       }
     ]
   },
@@ -109,10 +108,10 @@
         "link": "https://slack-tableflip.herokuapp.com/"
       },
       {
-        "title": "EM Slack Roll",
-        "repo": "em-slack-roll",
-        "description": "Roll some dice on Slack",
-        "link": "https://slack-roll.herokuapp.com/"
+        "title": "Prudential Center Lights Today",
+        "repo": "pru-lights-today",
+        "description": "Today's Prudential Center lighting event",
+        "link": "https://prudentialcenterlights.today/"
       }
     ]
   },
@@ -122,11 +121,6 @@
         "title": "LinkedIn",
         "link": "https://www.linkedin.com/in/ErinMorelli",
         "iconName": "linkedin"
-      },
-      {
-        "title": "Instagram",
-        "link": "https://www.instagram.com/erin_morelli/",
-        "iconName": "instagram"
       },
       {
         "title": "GitHub",
